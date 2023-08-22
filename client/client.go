@@ -8,8 +8,9 @@ import (
 	"time"
 )
 
-func GetCurrentDollar() {
+func GetDollarFromServer() {
 	http.HandleFunc("/", handleDollarFromServer)
+	http.ListenAndServe(":8080", nil)
 }
 
 func handleDollarFromServer(w http.ResponseWriter, r *http.Request) {
