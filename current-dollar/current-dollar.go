@@ -13,9 +13,3 @@ type USDBRL struct {
 	Timestamp  string `json:"timestamp"`
 	CreateDate string `json:"create_date"`
 }
-
-type CurrentDollar struct {
-	ID string `json:"id"`
-	ConsultedAt string `json:"consulted_at"`
-	USDBRL USDBRL `json:"USDBRL"`
-}
